@@ -34,7 +34,7 @@
         }
         
         .slide-header {
-            border-bottom: 4px solid #0066cc;
+            border-bottom: 4px solid #000;
             padding-bottom: 20px;
             margin-bottom: 40px;
         }
@@ -51,19 +51,19 @@
             position: absolute;
             bottom: 30px;
             left: 80px;
-            color: #0066cc;
+            color: #000;
             font-weight: 600;
             font-size: 14px;
         }
         
         h1 {
-            color: #0066cc;
+            color: #000;
             font-size: 42px;
             margin-bottom: 10px;
         }
         
         h2 {
-            color: #0066cc;
+            color: #000;
             font-size: 32px;
             margin-bottom: 20px;
         }
@@ -103,7 +103,7 @@
             content: "▸";
             position: absolute;
             left: 0;
-            color: #0066cc;
+            color: #000;
             font-size: 20px;
         }
         
@@ -115,7 +115,7 @@
         }
         
         .metric-box {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: #2a2a2a;
             color: white;
             padding: 30px;
             border-radius: 10px;
@@ -142,7 +142,7 @@
         }
         
         th {
-            background: #0066cc;
+            background: #000;
             color: white;
             padding: 15px;
             text-align: left;
@@ -159,24 +159,24 @@
         }
         
         .highlight-box {
-            background: #fff3cd;
-            border-left: 5px solid #ffc107;
+            background: #f5f5f5;
+            border-left: 5px solid #666;
             padding: 20px;
             margin: 20px 0;
             font-size: 18px;
         }
         
         .alert-box {
-            background: #f8d7da;
-            border-left: 5px solid #dc3545;
+            background: #e8e8e8;
+            border-left: 5px solid #000;
             padding: 20px;
             margin: 20px 0;
             font-size: 18px;
         }
         
         .success-box {
-            background: #d4edda;
-            border-left: 5px solid #28a745;
+            background: #f0f0f0;
+            border-left: 5px solid #4a4a4a;
             padding: 20px;
             margin: 20px 0;
             font-size: 18px;
@@ -186,7 +186,7 @@
             justify-content: center;
             align-items: center;
             text-align: center;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: #000;
             color: white;
         }
         
@@ -197,7 +197,7 @@
         }
         
         .title-slide .subtitle {
-            color: rgba(255,255,255,0.9);
+            color: #ccc;
             font-size: 28px;
         }
         
@@ -208,7 +208,7 @@
             font-family: 'Courier New', monospace;
             font-size: 14px;
             margin: 15px 0;
-            border-left: 4px solid #0066cc;
+            border-left: 4px solid #000;
         }
         
         .grid-3 {
@@ -228,7 +228,7 @@
         
         .card-title {
             font-size: 18px;
-            color: #0066cc;
+            color: #000;
             font-weight: 600;
             margin-bottom: 10px;
         }
@@ -256,6 +256,14 @@
         <h1>HR Analytics Dashboard</h1>
         <div class="subtitle">Transforming Workforce Data into Strategic Insights</div>
         <div style="margin-top: 40px; font-size: 24px; opacity: 0.9;">Synergy Group | 2012-2022 Analysis</div>
+        <div style="margin-top: 60px; background: white; color: #000; padding: 20px 40px; border-radius: 8px; display: inline-block;">
+            <div style="font-size: 16px; margin-bottom: 10px; font-weight: 600;">📊 View Live Dashboard</div>
+            <a href="https://app.powerbi.com/view?r=Oveview-SynergyGroupHRANALYTISCASE" 
+               target="_blank" 
+               style="color: #000; text-decoration: none; font-size: 18px; font-weight: bold; border-bottom: 2px solid #000; padding-bottom: 3px;">
+                Access Power BI Report →
+            </a>
+        </div>
     </div>
 
     <!-- Slide 2: Executive Summary -->
@@ -308,8 +316,8 @@
                 <div>
                     <h3>Star Schema Components</h3>
                     
-                    <div style="background: #e3f2fd; padding: 20px; border-radius: 8px; margin: 15px 0;">
-                        <strong style="color: #0066cc; font-size: 18px;">Dimension Tables</strong>
+                    <div style="background: #f5f5f5; padding: 20px; border-radius: 8px; margin: 15px 0; border: 2px solid #000;">
+                        <strong style="color: #000; font-size: 18px;">Dimension Tables</strong>
                         <ul style="margin-top: 10px;">
                             <li>DimEmployee</li>
                             <li>DimDate</li>
@@ -319,8 +327,8 @@
                         </ul>
                     </div>
                     
-                    <div style="background: #fff3e0; padding: 20px; border-radius: 8px;">
-                        <strong style="color: #f57c00; font-size: 18px;">Fact Table</strong>
+                    <div style="background: #e8e8e8; padding: 20px; border-radius: 8px; border: 2px solid #666;">
+                        <strong style="color: #333; font-size: 18px;">Fact Table</strong>
                         <ul style="margin-top: 10px;">
                             <li>FactPerformanceRating</li>
                         </ul>
@@ -364,32 +372,32 @@
                     <div class="metric-value">16.1%</div>
                     <div class="metric-label">2012-2022</div>
                 </div>
-                <div class="metric-box" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                <div class="metric-box" style="background: #1a1a1a;">
                     <div class="metric-label">Sales Dept. Attrition</div>
                     <div class="metric-value">40%</div>
-                    <div class="metric-label">🔴 Critical Risk</div>
+                    <div class="metric-label">● Critical Risk</div>
                 </div>
-                <div class="metric-box" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                <div class="metric-box" style="background: #4a4a4a;">
                     <div class="metric-label">Engineering Attrition</div>
                     <div class="metric-value">2.7%</div>
-                    <div class="metric-label">🟢 Low Risk</div>
+                    <div class="metric-label">● Low Risk</div>
                 </div>
             </div>
             
             <div class="two-column" style="margin-top: 30px;">
                 <div class="alert-box">
-                    <strong style="font-size: 20px;">⚠️ High-Risk Group</strong>
+                    <strong style="font-size: 20px;">⚠ High-Risk Group</strong>
                     <p style="margin-top: 15px;">Employees aged 20-29 show <strong>20% attrition</strong> and represent <strong>70% of workforce</strong></p>
                 </div>
                 
                 <div class="alert-box">
-                    <strong style="font-size: 20px;">✈️ Travel Impact</strong>
+                    <strong style="font-size: 20px;">✈ Travel Impact</strong>
                     <p style="margin-top: 15px;">Frequent travelers experience <strong>3x higher attrition</strong> (25% vs 8%)</p>
                 </div>
             </div>
             
             <div class="success-box" style="margin-top: 20px;">
-                <strong style="font-size: 20px;">💡 Key Insight:</strong> Young employees (under 30) represent the highest retention risk with a combined attrition rate of 35.7%
+                <strong style="font-size: 20px;">● Key Insight:</strong> Young employees (under 30) represent the highest retention risk with a combined attrition rate of 35.7%
             </div>
         </div>
         <div class="company-name">Synergy Group</div>
@@ -414,12 +422,12 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr style="background: #ffebee;">
+                            <tr style="background: #e8e8e8;">
                                 <td><strong>20-29</strong></td>
                                 <td><strong>20.0%</strong></td>
                                 <td>~50%</td>
                             </tr>
-                            <tr style="background: #fff3e0;">
+                            <tr style="background: #f5f5f5;">
                                 <td><strong>&lt;20</strong></td>
                                 <td><strong>14.8%</strong></td>
                                 <td>~20%</td>
@@ -429,7 +437,7 @@
                                 <td>12.3%</td>
                                 <td>~20%</td>
                             </tr>
-                            <tr style="background: #e8f5e9;">
+                            <tr style="background: #f0f0f0;">
                                 <td><strong>40-49</strong></td>
                                 <td><strong>6.8%</strong></td>
                                 <td>~8%</td>
@@ -445,15 +453,15 @@
                 
                 <div>
                     <h3>Gender Distribution</h3>
-                    <div class="card" style="margin: 20px 0;">
+                    <div class="card" style="margin: 20px 0; border: 2px solid #000;">
                         <div class="card-title">Male Employees</div>
-                        <div class="card-value" style="color: #0066cc;">17.5%</div>
+                        <div class="card-value" style="color: #000;">17.5%</div>
                         <div style="margin-top: 10px; color: #666;">Attrition Rate</div>
                     </div>
                     
-                    <div class="card">
+                    <div class="card" style="border: 2px solid #666;">
                         <div class="card-title">Female Employees</div>
-                        <div class="card-value" style="color: #764ba2;">15.4%</div>
+                        <div class="card-value" style="color: #333;">15.4%</div>
                         <div style="margin-top: 10px; color: #666;">Attrition Rate</div>
                     </div>
                     
@@ -485,15 +493,15 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr style="background: #ffebee;">
+                            <tr style="background: #e8e8e8;">
                                 <td><strong>Sales</strong></td>
                                 <td><strong>40.0%</strong></td>
-                                <td>🔴 Critical</td>
+                                <td>● Critical</td>
                             </tr>
-                            <tr style="background: #e8f5e9;">
+                            <tr style="background: #f5f5f5;">
                                 <td><strong>Engineering</strong></td>
                                 <td><strong>2.7%</strong></td>
-                                <td>🟢 Low</td>
+                                <td>● Low</td>
                             </tr>
                         </tbody>
                     </table>
@@ -513,15 +521,15 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr style="background: #ffebee;">
+                            <tr style="background: #e8e8e8;">
                                 <td><strong>Frequent Travel</strong></td>
                                 <td><strong>25.0%</strong></td>
                             </tr>
-                            <tr style="background: #fff3e0;">
+                            <tr style="background: #f5f5f5;">
                                 <td>Limited Travel</td>
                                 <td>15.0%</td>
                             </tr>
-                            <tr style="background: #e8f5e9;">
+                            <tr style="background: #f0f0f0;">
                                 <td><strong>No Travel</strong></td>
                                 <td><strong>8.0%</strong></td>
                             </tr>
@@ -603,8 +611,8 @@ DIVIDE(
         <div class="content">
             <h3>High-Priority Actions</h3>
             
-            <div style="background: #e3f2fd; padding: 25px; border-radius: 8px; margin: 20px 0;">
-                <strong style="color: #0066cc; font-size: 20px;">1. Young Employee Retention Program</strong>
+            <div style="background: #f5f5f5; padding: 25px; border-radius: 8px; margin: 20px 0; border-left: 5px solid #000;">
+                <strong style="color: #000; font-size: 20px;">1. Young Employee Retention Program</strong>
                 <ul style="margin-top: 15px;">
                     <li>Develop targeted initiatives for employees aged 20-29</li>
                     <li>Implement structured mentorship programs</li>
@@ -613,8 +621,8 @@ DIVIDE(
                 </ul>
             </div>
             
-            <div style="background: #ffebee; padding: 25px; border-radius: 8px; margin: 20px 0;">
-                <strong style="color: #c62828; font-size: 20px;">2. Sales Department Intervention</strong>
+            <div style="background: #e8e8e8; padding: 25px; border-radius: 8px; margin: 20px 0; border-left: 5px solid #1a1a1a;">
+                <strong style="color: #000; font-size: 20px;">2. Sales Department Intervention</strong>
                 <ul style="margin-top: 15px;">
                     <li>Immediate exit interview analysis with departing staff</li>
                     <li>Benchmark compensation against industry standards</li>
@@ -623,8 +631,8 @@ DIVIDE(
                 </ul>
             </div>
             
-            <div style="background: #fff3e0; padding: 25px; border-radius: 8px; margin: 20px 0;">
-                <strong style="color: #f57c00; font-size: 20px;">3. Travel Policy Enhancement</strong>
+            <div style="background: #f0f0f0; padding: 25px; border-radius: 8px; margin: 20px 0; border-left: 5px solid #4a4a4a;">
+                <strong style="color: #333; font-size: 20px;">3. Travel Policy Enhancement</strong>
                 <ul style="margin-top: 15px;">
                     <li>Implement enhanced travel allowances and compensation</li>
                     <li>Establish rotation programs for high-travel roles</li>
@@ -645,25 +653,25 @@ DIVIDE(
             <h3>High-Risk Employee Profiles</h3>
             
             <div class="grid-3" style="margin-top: 20px;">
-                <div style="background: #ffebee; padding: 25px; border-radius: 8px; border: 2px solid #ef5350;">
+                <div style="background: #e8e8e8; padding: 25px; border-radius: 8px; border: 2px solid #000;">
                     <div style="font-size: 48px; text-align: center; margin-bottom: 10px;">👥</div>
-                    <strong style="color: #c62828; font-size: 18px; display: block; text-align: center;">Age Groups</strong>
+                    <strong style="color: #000; font-size: 18px; display: block; text-align: center;">Age Groups</strong>
                     <p style="margin-top: 15px; text-align: center;">Under 20 to 29 years old</p>
-                    <p style="text-align: center; font-weight: bold; color: #c62828; margin-top: 10px;">35.7% Risk</p>
+                    <p style="text-align: center; font-weight: bold; color: #000; margin-top: 10px;">35.7% Risk</p>
                 </div>
                 
-                <div style="background: #fff3e0; padding: 25px; border-radius: 8px; border: 2px solid #ff9800;">
+                <div style="background: #f0f0f0; padding: 25px; border-radius: 8px; border: 2px solid #4a4a4a;">
                     <div style="font-size: 48px; text-align: center; margin-bottom: 10px;">🏢</div>
-                    <strong style="color: #f57c00; font-size: 18px; display: block; text-align: center;">Departments</strong>
+                    <strong style="color: #333; font-size: 18px; display: block; text-align: center;">Departments</strong>
                     <p style="margin-top: 15px; text-align: center;">Sales team members</p>
-                    <p style="text-align: center; font-weight: bold; color: #f57c00; margin-top: 10px;">40% Risk</p>
+                    <p style="text-align: center; font-weight: bold; color: #333; margin-top: 10px;">40% Risk</p>
                 </div>
                 
-                <div style="background: #e3f2fd; padding: 25px; border-radius: 8px; border: 2px solid #42a5f5;">
+                <div style="background: #f5f5f5; padding: 25px; border-radius: 8px; border: 2px solid #666;">
                     <div style="font-size: 48px; text-align: center; margin-bottom: 10px;">✈️</div>
-                    <strong style="color: #0066cc; font-size: 18px; display: block; text-align: center;">Travel Profiles</strong>
+                    <strong style="color: #000; font-size: 18px; display: block; text-align: center;">Travel Profiles</strong>
                     <p style="margin-top: 15px; text-align: center;">Frequent travelers</p>
-                    <p style="text-align: center; font-weight: bold; color: #0066cc; margin-top: 10px;">25% Risk</p>
+                    <p style="text-align: center; font-weight: bold; color: #000; margin-top: 10px;">25% Risk</p>
                 </div>
             </div>
             
@@ -695,7 +703,7 @@ DIVIDE(
             <h2>Conclusion & Next Steps</h2>
         </div>
         <div class="content">
-            <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 40px; border-radius: 12px; margin-bottom: 30px;">
+            <div style="background: #2a2a2a; color: white; padding: 40px; border-radius: 12px; margin-bottom: 30px;">
                 <h3 style="color: white; font-size: 28px; margin-bottom: 20px;">Project Impact</h3>
                 <p style="font-size: 20px; line-height: 1.8;">
                     This HR Analytics solution transforms raw employee data into strategic insights, enabling Synergy Group to proactively address retention challenges, optimize workforce planning, and improve organizational health.
@@ -729,6 +737,15 @@ DIVIDE(
             <div class="success-box" style="margin-top: 30px;">
                 <strong style="font-size: 20px;">Next Steps:</strong> Deploy dashboard to HR leadership, schedule quarterly review sessions, and integrate retention action plans into performance management cycle.
             </div>
+            
+            <div style="background: #000; color: white; padding: 30px; border-radius: 8px; margin-top: 30px; text-align: center;">
+                <div style="font-size: 20px; margin-bottom: 15px; font-weight: 600;">📊 Access the Live Dashboard</div>
+                <a href="https://app.powerbi.com/view?r=Oveview-SynergyGroupHRANALYTISCASE" 
+                   target="_blank" 
+                   style="color: white; text-decoration: none; font-size: 22px; font-weight: bold; border-bottom: 3px solid white; padding-bottom: 5px;">
+                    View Power BI Report →
+                </a>
+            </div>
         </div>
         <div class="company-name">Synergy Group</div>
         <div class="slide-number">10</div>
@@ -741,6 +758,14 @@ DIVIDE(
         <div style="margin-top: 60px; font-size: 20px; opacity: 0.9;">
             <p>HR Analytics Dashboard</p>
             <p style="margin-top: 10px;">Synergy Group</p>
+        </div>
+        <div style="margin-top: 50px; background: white; color: #000; padding: 25px 50px; border-radius: 8px; display: inline-block;">
+            <div style="font-size: 16px; margin-bottom: 10px; font-weight: 600;">📊 Explore the Dashboard</div>
+            <a href="https://app.powerbi.com/view?r=Oveview-SynergyGroupHRANALYTISCASE" 
+               target="_blank" 
+               style="color: #000; text-decoration: none; font-size: 20px; font-weight: bold; border-bottom: 2px solid #000; padding-bottom: 3px;">
+                app.powerbi.com/view →
+            </a>
         </div>
     </div>
 
